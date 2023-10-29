@@ -1,0 +1,126 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/* Body and Header Styles */
+body {
+    background: url("/images/myPhoto1.jpeg") no-repeat center center fixed;
+    background-attachment: scroll;
+    position: relative;
+    background-size: cover;
+}
+
+.container{
+    
+    z-index: 1;
+
+}
+.header {
+    height: 100vh;
+    width: 100%;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+/* Header Name Styles */
+.header-name {
+    margin: 40px;
+    margin-top: 200px;
+}
+
+.header-name h1 {
+    font-size: 70px;
+}
+
+.header-name h2 {
+    font-size: 40px;
+}
+
+.header-name h3 {
+    letter-spacing: 2px;
+}
+
+/* Navigation Styles */
+.nav-header ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    list-style: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+}
+
+.nav-header {
+    border: #222 solid 1px;
+}
+
+.nav-header ul li img {
+    width: 70px; /* Adjust the width and height to your preferred size */
+    height: 70px;
+    border-radius: 50%; /* Make the image circular */
+}
+
+/* Container Styles */
+.container-about {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+.container-about div {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 40px 30px 50px 30px;
+    border: hsl(0, 0%, 13%) solid 1px;
+}
+
+/* Who I Am Section Styles */
+.Who-I-am {
+    /* Add any specific styles for this section */
+}
+
+.p-title {
+    font-size: 30px;
+    margin: 40px;
+}
+
+.Who-I-am h2,
+.Who-I-am p,
+.Who-I-am input {
+    margin: 5px;
+}
+
+/* Personal Info Section Styles */
+.Info {
+    /* Add any specific styles for this section */
+}
+
+/* Expertise Section Styles */
+.Expertise {
+    /* Add any specific styles for this section */
+}
+
+button {
+    border: #fe0026 solid;
+    width: max-content;
+    background-color: #fff;
+    color: #fe0026;
+    padding: 20px;
+}
+
+.list-info {
+    list-style: none;
+    display: flex;
+}
+
