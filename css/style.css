@@ -7,30 +7,37 @@
 }
 
 /* Body and Header Styles */
+html{
+    background-color: #0e0808;
+}
 body {
+    width: 100%;
+    height: 100%;
     background: url("/images/myPhoto1.jpeg") no-repeat center center fixed;
-    background-attachment: scroll;
+   
     position: relative;
-    background-size: cover;
-}
 
-.container{
     
-    z-index: 1;
-
+    background-size: contain;
+    
+    
 }
+.container {
+    z-index: 1;
+}
+
 .header {
-    height: 100vh;
+    height: 80vh;
     width: 100%;
     color: #fff;
     display: flex;
     align-items: center;
 }
 
-/* Header Name Styles */
 .header-name {
     margin: 40px;
     margin-top: 200px;
+    text-align: center;
 }
 
 .header-name h1 {
@@ -45,81 +52,224 @@ body {
     letter-spacing: 2px;
 }
 
-/* Navigation Styles */
 .nav-header ul {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     list-style: none;
     padding-left: 10px;
-    padding-right: 10px;
-    background: #fff;
+    padding-right: 8px;
     position: relative;
     z-index: 1;
+    color: #fff;
+    font-size: larger;
+    
+}
+a {
+    text-decoration: none;
+    color: #000;
+    
+}
+
+.nav-header ul li {
+    width: 50%;
+    text-align: center;
+    border-radius: 10px;
 }
 
 .nav-header {
-    border: #222 solid 1px;
+    padding: 20px;
+}
+
+.nav-header ul {
+    border: #d6d6d6 solid 1px;
+    background-color: #ffffff;
+    color: #050505;
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
 .nav-header ul li img {
-    width: 70px; /* Adjust the width and height to your preferred size */
-    height: 70px;
-    border-radius: 50%; /* Make the image circular */
+    width: 100px;
+    height: 100px;
+    padding: 5px;
 }
 
-/* Container Styles */
 .container-about {
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
 }
 
-.container-about div {
+.div-a {
     display: flex;
     flex-direction: column;
     background-color: #fff;
-    padding: 40px 30px 50px 30px;
-    border: hsl(0, 0%, 13%) solid 1px;
-}
-
-/* Who I Am Section Styles */
-.Who-I-am {
-    /* Add any specific styles for this section */
+    padding: 40px;
+    border-left: hsl(0, 0%, 53%) solid 1px;
+    border-bottom: hsl(0, 0%, 53%) solid 1px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: 10px;
 }
 
 .p-title {
     font-size: 30px;
-    margin: 40px;
-}
-
-.Who-I-am h2,
-.Who-I-am p,
-.Who-I-am input {
-    margin: 5px;
-}
-
-/* Personal Info Section Styles */
-.Info {
-    /* Add any specific styles for this section */
-}
-
-/* Expertise Section Styles */
-.Expertise {
-    /* Add any specific styles for this section */
-}
-
-button {
-    border: #fe0026 solid;
-    width: max-content;
-    background-color: #fff;
-    color: #fe0026;
-    padding: 20px;
+    margin-bottom: 20px;
 }
 
 .list-info {
     list-style: none;
     display: flex;
+    flex-direction: column;
+}
+
+.list-info li {
+    margin: 10px;
+}
+
+.list-social-media {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+}
+
+.list-social-media li img {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.title-expert {
+    margin-bottom: 10px;
+    font-size: larger;
+}
+
+.expert-div {
+    border-bottom: 1px solid #5b5757;
+    margin: 10px;
+    padding: 10px;
+}
+
+#who-I-am {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+
+
+
+
+.container-education {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-education h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.content-education {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.section-education {
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    margin: 10px;
+    text-align: center;
+}
+
+.date {
+    font-size: 18px;
+    color: #4CAF50;
+}
+
+.degree {
+    font-size: 24px;
+    color: #333;
+    margin-top: 10px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+.institution {
+    font-size: 20px;
+    color: #333;
+    font-weight: bold;
+}
+
+.location {
+    font-size: 16px;
+    color: #777;
+}
+
+
+
+
+
+
+
+.container-skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.header-skill h1 {
+    font-size: 24px;
+    color: #ffffff;
+    text-align: center;
+}
+
+.skills-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.skills-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #ffffff;
+    padding: 20px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+}
+
+.skills-section i {
+    font-size: 48px;
+    color: #4CAF50; /* Adjust the color as needed */
+    margin-bottom: 10px;
+}
+
+.skills-section p {
+    font-size: 18px;
+    color: #333;
 }
