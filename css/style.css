@@ -161,17 +161,14 @@ a {
     display: flex;
     flex-direction: row;
     list-style: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
     margin: 20px;
 }
-
-.list-social-media li img {
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    cursor: pointer;
+.list-social-media i{
+    color: #000;
 }
+
 
 .title-objective ,
 .title-expert {
@@ -303,9 +300,9 @@ footer ,
 
 .skills-section i {
     font-size: 48px;
-    color: #4CAF50; /* Adjust the color as needed */
+    color: #4CAF50; 
     margin-bottom: 10px;
-    transition: transform 0.3s; /* Apply the same transition to the icon */
+    transition: transform 0.3s; 
 }
 
 .skills-section p {
@@ -315,10 +312,10 @@ footer ,
 .skills-section p {
     font-size: 18px;
     color: #333;
-    transition: color 0.3s; /* Add a color change transition on hover */
+    transition: color 0.3s;
 }
 .skills-section:hover i {
-    color: #007bff; /* New color on hover */
+    color: #007bff; 
 }
 
 .header-objectives {
@@ -347,6 +344,12 @@ footer ,
     text-align: center;
 }
 
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .footer-content {
     display: flex;
     flex-direction: row;
@@ -364,7 +367,7 @@ footer ,
 }
 .footer a {
     font-size: large;
-    color: #ffffff;
+    color: #000000;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -374,7 +377,8 @@ footer ,
     flex-direction: row;
     align-self: flex-end;
     list-style: none;
-    
+    margin-bottom: 10%;
+
     
 }
 .footer li:hover{
@@ -385,5 +389,14 @@ footer ,
 }
 
 .footer a:hover{
-    color: #003165;
+    color: #027d06;
+    font-size: large;
+}
+
+.contact h4, p{
+    margin: 5px;
+}
+
+.contact h4{
+    font-size: larger;
 }
