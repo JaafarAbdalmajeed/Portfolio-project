@@ -355,13 +355,3 @@ hr {
 }
 
 
-@keyframes scaleUp {
-    0% {
-        transform: scale(1);
-        color: #4CAF50;
-    }
-    100% {
-        transform: scale(1.05);
-        color: #007bff;
-    }
-}
