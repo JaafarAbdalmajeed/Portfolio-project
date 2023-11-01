@@ -96,6 +96,7 @@ a {
 }
 
 
+
 .nav-header {
     padding: 20px;
 }
@@ -206,7 +207,7 @@ a {
     padding: 20px;
 }
 
-.header-objectives ,
+
 .header-education h1 {
     font-size: 24px;
     color: #ffffff;
@@ -272,6 +273,7 @@ hr {
     padding: 20px;
 }
 
+
 .header-skill h1 {
     font-size: 24px;
     color: #ffffff;
@@ -297,17 +299,44 @@ hr {
     margin: 10px;
 }
 
+.skills-section:hover {
+    transform: scale(1.05); /* Increase the size slightly on hover */
+    transition: transform 0.3s; /* Add a smooth transition effect */
+}
+
 .skills-section i {
     font-size: 48px;
     color: #4CAF50; /* Adjust the color as needed */
     margin-bottom: 10px;
 }
 
+.skills-section i {
+    font-size: 48px;
+    color: #4CAF50; /* Adjust the color as needed */
+    margin-bottom: 10px;
+    transition: transform 0.3s; /* Apply the same transition to the icon */
+}
+
+
 .skills-section p {
     font-size: 18px;
     color: #333;
 }
+.skills-section p {
+    font-size: 18px;
+    color: #333;
+    transition: color 0.3s; /* Add a color change transition on hover */
+}
+.skills-section:hover i {
+    color: #007bff; /* New color on hover */
+}
 
+
+.header-objectives {
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+}
 
 .objectives{
     background: linear-gradient(100deg, #fffdfd,#686666);
@@ -323,4 +352,16 @@ hr {
 .objectives i {
     margin-right: 10px; /* Add some space between the icon and text */
     font-size: 18px; /* Adjust the icon size as needed */
+}
+
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+        color: #4CAF50;
+    }
+    100% {
+        transform: scale(1.05);
+        color: #007bff;
+    }
 }
