@@ -360,7 +360,7 @@ footer{
     justify-content: space-between;
     border-radius: 8px;
     margin: 10px;
-    padding: 40px;
+    padding: 10px;
 }
 
 .footer p{
@@ -378,8 +378,9 @@ footer{
     flex-direction: row;
     align-self: flex-end;
     list-style: none;
-    margin-bottom: 10%;
+    margin-bottom: 1%;
     width: 100%;
+    justify-content: center;
     
 }
 .footer li:hover{
@@ -404,8 +405,7 @@ footer{
 
 .contact {
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    justify-content: space-around;
     width: 100%;
     
 }
