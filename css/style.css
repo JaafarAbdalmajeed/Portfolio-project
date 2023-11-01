@@ -53,6 +53,7 @@ body {
     letter-spacing: 2px;
 }
 
+
 .nav-header ul {
     display: flex;
     flex-direction: row;
@@ -135,6 +136,7 @@ a {
     background-color: #ffffff;
     transition: background-color 0.5s;
 }
+
 .btn:hover {
     background-color: #000;
     color: #aaa5a5;
@@ -200,7 +202,7 @@ a {
 
 .header-education h1 {
     font-size: 24px;
-    color: #ffffff;
+    color: #d3cece;
     text-align: center;
 }
 
@@ -265,7 +267,7 @@ footer ,
 
 .header-skill h1 {
     font-size: 24px;
-    color: #ffffff;
+    color: #d3cece;
     text-align: center;
 }
 
@@ -289,13 +291,13 @@ footer ,
 }
 
 .skills-section:hover {
-    transform: scale(1.05); /* Increase the size slightly on hover */
-    transition: transform 0.3s; /* Add a smooth transition effect */
+    transform: scale(1.05);
+    transition: transform 0.3s; 
 }
 
 .skills-section i {
     font-size: 48px;
-    color: #4CAF50; /* Adjust the color as needed */
+    color: #4CAF50; 
     margin-bottom: 10px;
 }
 
@@ -321,7 +323,7 @@ footer ,
 
 .header-objectives {
     font-size: 14px;
-    color: #ffffff;
+    color: #d3cece;
     text-align: center;
 }
 
@@ -341,21 +343,47 @@ footer ,
 
 .header-experience {
     font-size: 14px;
-    color: #ffffff;
+    color: #d3cece;
     text-align: center;
 }
 
-.footer {
+.footer-content {
     display: flex;
     flex-direction: row;
     background: linear-gradient(100deg, #fffdfd,#686666);
-    width: 40%;
+    width: 100%;
     align-items: center;
     justify-content: space-between;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 40px;
 }
 
+.footer p{
+    font-size: large;
+}
 .footer a {
-    color: #fff; /* Color for links in the footer */
-    text-decoration: none; /* Remove underline from links */
-    margin: 0 10px; /* Add some spacing between links */
+    font-size: large;
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    align-self: flex-end;
+    list-style: none;
+    
+    
+}
+.footer li:hover{
+    
+    color: #003165;
+    transform: scale(1.2);
+    transition: transform 0.4s;
+}
+
+.footer a:hover{
+    color: #003165;
 }
