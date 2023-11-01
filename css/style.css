@@ -135,6 +135,7 @@ a {
     color:#482b2b;
     background-color: #ffffff;
     transition: background-color 0.5s;
+    text-align: center;
 }
 
 .btn:hover {
@@ -378,7 +379,7 @@ footer{
     align-self: flex-end;
     list-style: none;
     margin-bottom: 10%;
-
+    width: 100%;
     
 }
 .footer li:hover{
@@ -399,4 +400,63 @@ footer{
 
 .contact h4{
     font-size: larger;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    
+}
+
+@media (min-width: 368px) and (max-width:750px){
+    body {
+        background-size:contain; 
+    }
+
+    .header-name {
+        margin: 40px;
+        margin-top: 300px;
+        text-align: center;
+    }
+
+    .header-name h1 {
+        font-size: 40px;
+    }
+    
+
+    .container-about {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-header ul {
+        flex-direction: column;
+    }
+
+    .div-a {
+        margin: 10px 0; 
+    }
+
+    .btn {
+        width: 100%; 
+    }
+
+    .list-info li {
+        margin: 5px; 
+    }
+
+    .list-social-media {
+        margin: 10px 0; 
+    }
+
+    .footer-links {
+        flex-direction: column;
+    }
+
+    .footer-links li {
+        margin-right: 0; 
+        margin-bottom: 10px;
+    }
+
 }
